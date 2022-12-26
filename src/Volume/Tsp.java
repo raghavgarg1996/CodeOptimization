@@ -1,6 +1,6 @@
 package Volume;
 
-public class Tsp implements Volume{
+public class Tsp implements Volume {
 
     private final double vol;
 
@@ -10,7 +10,7 @@ public class Tsp implements Volume{
 
     @Override
     public double toTbsp() {
-        return vol/3;
+        return vol / 3;
     }
 
     @Override
@@ -20,11 +20,11 @@ public class Tsp implements Volume{
 
     @Override
     public double toCup() {
-        return vol/48;
+        return vol / 48;
     }
 
     @Override
     public double topint() {
-        return vol/96;
+        return vol / 96;
     }
 }

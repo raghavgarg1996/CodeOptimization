@@ -1,23 +1,29 @@
 package Volume;
 
 public class Pint implements Volume{
+    private final double vol;
+
+    public Pint(double vol) {
+        this.vol = vol;
+    }
+
     @Override
     public double toTbsp() {
-        return 0;
+        return vol * 32;
     }
 
     @Override
     public double toTsp() {
-        return 0;
+        return vol * 96;
     }
 
     @Override
     public double toCup() {
-        return 0;
+        return vol * 2;
     }
 
     @Override
     public double topint() {
-        return 0;
+        return vol;
     }
 }

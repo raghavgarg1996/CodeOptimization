@@ -1,23 +1,29 @@
 package Volume;
 
-public class Tbsp implements Volume{
+public class Tbsp implements Volume {
+    private final double vol;
+
+    public Tbsp(double vol) {
+        this.vol = vol;
+    }
+
     @Override
     public double toTbsp() {
-        return 0;
+        return vol;
     }
 
     @Override
     public double toTsp() {
-        return 0;
+        return vol * 3;
     }
 
     @Override
     public double toCup() {
-        return 0;
+        return vol / 16;
     }
 
     @Override
     public double topint() {
-        return 0;
+        return vol / 32;
     }
 }
