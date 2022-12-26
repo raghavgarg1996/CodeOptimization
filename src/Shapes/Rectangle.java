@@ -17,6 +17,6 @@ public class Rectangle implements Shapes {
 
     @Override
     public Double calculatePerimeter() {
-        return length * breadth;
+        return 2 * (length + breadth);
     }
 }
