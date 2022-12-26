@@ -4,8 +4,8 @@ public class main {
 
     public static void main(String[] args) {
 
-        square(10.00);
-        rectangle(10.00,20.00);
+        square(10);
+        rectangle(10,20);
     }
 
     public static void square(double side) {
