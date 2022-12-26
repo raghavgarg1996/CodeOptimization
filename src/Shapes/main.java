@@ -4,12 +4,12 @@ public class main {
 
     public static void main(String[] args) {
 
-        square();
-        rectangle();
+        square(10.00);
+        rectangle(10.00,20.00);
     }
 
-    public static void square() {
-        Square s = new Square(10.00);
+    public static void square(double side) {
+        Square s = new Square(side);
         double squareArea = s.calculateArea();
         double squarePerimeter = s.calculatePerimeter();
         System.out.println("Square details :--");
@@ -17,8 +17,8 @@ public class main {
         System.out.println("Perimeter: " + squarePerimeter);
     }
 
-    public static void rectangle() {
-        Rectangle r = new Rectangle(10.00, 20.00);
+    public static void rectangle(double length, double breadth) {
+        Rectangle r = new Rectangle(length, breadth);
         double rectangleArea = r.calculateArea();
         double rectanglePerimeter = r.calculatePerimeter();
         System.out.println("Rectangle details :--");
