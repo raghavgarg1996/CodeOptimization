@@ -4,12 +4,15 @@ public class Plan {
     private final double basicMonthlyRate;
     private final int minsIncluded;
     private final double extraMincharge;
+    private final double additionalLineRate;
 
-    public Plan(double basicMonthlyRate, int minsIncluded, double extraMincharge) {
+
+    public Plan(double basicMonthlyRate, int minsIncluded, double extraMincharge, double additionalLineRate) {
 
         this.basicMonthlyRate = basicMonthlyRate;
         this.minsIncluded = minsIncluded;
         this.extraMincharge = extraMincharge;
+        this.additionalLineRate = additionalLineRate;
     }
 
     public double calculateBill(int minsUsed) {
@@ -17,7 +20,7 @@ public class Plan {
     }
 
     private double chargeForExtraMins(int minsUsed) {
-        int extraMins = max(minsUsed - minsIncluded,0);
+        int extraMins = max(minsUsed - minsIncluded, 0);
         return extraMins * extraMincharge;
     }
 }
