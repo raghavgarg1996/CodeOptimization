@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Roman Numeral to Decimal Conversion</title>
+</head>
+<body>
+<h2>Roman Numeral to Decimal Conversion</h2>
+
+<p><b><span>7 basic Roman Numerals</span></b></p>
+
+<table border="1" cellspacing="0" cellpadding="2">
+ <tr>
+  <td>
+  <p><span>Convert</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>roman</span></span></p>
+  </td>
+  <td>
+  <p><span>decimal</span></span><span>?</span></p>
+  </td>
+  <td>
+  <p><span>comment</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>I</span></p>
+  </td>
+  <td>
+  <p><span>1</span></p>
+  </td>
+  <td>
+  <p><span>(<span>one</span>) (<span><span>unus</span></span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>V</span></p>
+  </td>
+  <td>
+  <p><span>5</span></p>
+  </td>
+  <td>
+  <p><span>(<span>five</span>) (<span><span>quinque</span></span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>X</span></p>
+  </td>
+  <td>
+  <p><span>10</span></p>
+  </td>
+  <td>
+  <p><span>(<span>ten</span>) (<span><span>decem</span></span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>L</span></p>
+  </td>
+  <td>
+  <p><span>50</span></p>
+  </td>
+  <td>
+  <p><span>(<span>fifty</span>) (<span><span>quinquaginta</span></span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>C</span></p>
+  </td>
+  <td>
+  <p><span>100</span></p>
+  </td>
+  <td>
+  <p><span>(<span>one</span> hundred) (<span>centum</span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>D</span></p>
+  </td>
+  <td>
+  <p><span>500</span></p>
+  </td>
+  <td>
+  <p><span>(<span>five</span> hundred) (<span><span>quingenti</span></span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>M</span></p>
+  </td>
+  <td>
+  <p><span>1000</span></p>
+  </td>
+  <td>
+  <p><span>(<span>one</span> thousand) (<span>mille</span>)</span></p>
+  </td>
+ </tr>
+</table>
+
+<p><b></b></p>
+
+<p><b><span>Roman Numerals are case-insensitive</span></b></p>
+
+<p></p>
+
+<table border="1" cellspacing="0" cellpadding="2">
+ <tr>
+  <td>
+  <p><span>Convert</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>roman</span></span></p>
+  </td>
+  <td>
+  <p><span>decimal</span></span><span>?</span></p>
+  </td>
+  <td>
+  <p><span>comment</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span><span><span>i</span></span></span><span></span></p>
+  </td>
+  <td>
+  <p><span>1</span></p>
+  </td>
+  <td>
+  <p><span>(<span>one</span>) (<span><span>unus</span></span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>I</span></p>
+  </td>
+  <td>
+  <p><span>1</span></p>
+  </td>
+  <td>
+  <p><span>(<span>one</span>) (<span><span>unus</span></span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>v</span></span></p>
+  </td>
+  <td>
+  <p><span>5</span></p>
+  </td>
+  <td>
+  <p><span>(<span>five</span>) (<span><span>quinque</span></span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>V</span></p>
+  </td>
+  <td>
+  <p><span>5</span></p>
+  </td>
+  <td>
+  <p><span>(<span>five</span>) (<span><span>quinque</span></span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>x</span></span></p>
+  </td>
+  <td>
+  <p><span>10</span></p>
+  </td>
+  <td>
+  <p><span>(<span>ten</span>) (<span><span>decem</span></span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>X</span></p>
+  </td>
+  <td>
+  <p><span>10</span></p>
+  </td>
+  <td>
+  <p><span>(<span>ten</span>) (<span><span>decem</span></span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>l</span></span></p>
+  </td>
+  <td>
+  <p><span>50</span></p>
+  </td>
+  <td>
+  <p><span>(<span>fifty</span>) (<span><span>quinquaginta</span></span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>L</span></p>
+  </td>
+  <td>
+  <p><span>50</span></p>
+  </td>
+  <td>
+  <p><span>(<span>fifty</span>) (<span><span>quinquaginta</span></span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>c</span></span></p>
+  </td>
+  <td>
+  <p><span>100</span></p>
+  </td>
+  <td>
+  <p><span>(<span>one</span> hundred) (<span>centum</span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>C</span></p>
+  </td>
+  <td>
+  <p><span>100</span></p>
+  </td>
+  <td>
+  <p><span>(<span>one</span> hundred) (<span>centum</span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>d</span></span></p>
+  </td>
+  <td>
+  <p><span>500</span></p>
+  </td>
+  <td>
+  <p><span>(<span>five</span> hundred) (<span><span>quingenti</span></span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>D</span></p>
+  </td>
+  <td>
+  <p><span>500</span></p>
+  </td>
+  <td>
+  <p><span>(<span>five</span> hundred) (<span><span>quingenti</span></span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>m</span></span></p>
+  </td>
+  <td>
+  <p><span>1000</span></p>
+  </td>
+  <td>
+  <p><span>(<span>one</span> thousand) (<span>mille</span>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>M</span></p>
+  </td>
+  <td>
+  <p><span>1000</span></p>
+  </td>
+  <td>
+  <p><span>(<span>one</span> thousand) (<span>mille</span>)</span></p>
+  </td>
+ </tr>
+</table>
+
+<p><b></b></p>
+
+<p><b><span>Ignore White Space</span></b></p>
+
+<p></p>
+
+<table border="1" cellspacing="0" cellpadding="2">
+ <tr>
+  <td>
+  <p><span>Convert</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>roman</span></span></p>
+  </td>
+  <td>
+  <p><span>decimal?</span></p>
+  </td>
+  <td>
+  <p><span>comment</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span><span><span>i</span></span></span><span></span></p>
+  </td>
+  <td>
+  <p><span>1</span></p>
+  </td>
+  <td>
+  <p><span>ignore</span></span><span> white spaces before numerals</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>v</span></span></p>
+  </td>
+  <td>
+  <p><span>5</span></p>
+  </td>
+  <td>
+  <p><span>ignore</span></span><span> white spaces after numerals</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>x</span></span></p>
+  </td>
+  <td>
+  <p><span>10</span></p>
+  </td>
+  <td>
+  <p><span>ignore</span></span><span> white spaces before and after numerals</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>l</span></span><span> x</span></p>
+  </td>
+  <td>
+  <p><span>60</span></p>
+  </td>
+  <td>
+  <p><span>ignore</span></span><span> white spaces in between numerals</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>c</span></span><span> l x</span></p>
+  </td>
+  <td>
+  <p><span>160</span></p>
+  </td>
+  <td>
+  <p><span>ignore</span></span><span> white spaces in between numerals</span></p>
+  </td>
+ </tr>
+</table>
+
+<p></p>
+
+<p><b><span>Invalid Symbols</span></b></p>
+
+<p><span>Note
+that there is no number smaller than one. The concept of zero and negative
+numbers do not exist in Roman Numerals.</span></p>
+
+<p></p>
+
+<table border="1" cellspacing="0" cellpadding="2">
+ <tr>
+  <td>
+  <p><span>Convert</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>roman</span></span></p>
+  </td>
+  <td>
+  <p><span>decimal</span></span><span>?</span></p>
+  </td>
+  <td>
+  <p><span>comment</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>0</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>no</span></span><span> concept of zero in Roman</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>-<span><span>i</span></span></span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>no</span></span><span> concept of negative numbers</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>-X</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>no</span></span><span> concept of negative numbers</span></p>
+  </td>
+ </tr>
+</table>
+
+<p></p>
+
+<p><span>So
+for this exercise, any other symbol than the seven basic symbols are invalid
+and will result in an exception.</span></p>
+
+<p></p>
+
+<table border="1" cellspacing="0" cellpadding="2">
+ <tr>
+  <td>
+  <p><span>Convert</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>roman</span></span></p>
+  </td>
+  <td>
+  <p><span>decimal</span></span><span>?</span></p>
+  </td>
+  <td>
+  <p><span>comment</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>null</span></span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>null</span></span><span> is not a valid symbol</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>blank</span></span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>empty</span></span><span> string is not a valid symbol</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>A</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>only</span></span><span> I, V, X, L, C, D and M are valid symbols</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>a</span></span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>only</span></span><span> <span>i</span>, v, x, l, c, d and
+  m are valid symbols</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>z</span></span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>only</span></span><span> <span>i</span>, v, x, l, c, d and
+  m are valid symbols</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>Z</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>only</span></span><span> I, V, X, L, C, D and M are valid symbols</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>MMAD</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>A
+  is not a valid symbol</span></p>
+  </td>
+ </tr>
+</table>
+
+<p><b></b></p>
+
+<p><b></b></p>
+
+<p><b><span>Rule of Addition</span></b></p>
+
+<p></p>
+
+<p><span>The
+system of Roman numerals is a so-called additive system. Thus, the values of
+the used numeric symbols just have to be added in order to get the number
+represented. </span></p>
+
+<p></p>
+
+<p><span>For
+example, to find out the value of the Roman numeral CCLXVII, you just have to
+calculate:</span></p>
+
+<p><span><span style="mso-spacerun:yes">&nbsp; </span>C <span class=GramE>+<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>C</span> +<span style="mso-spacerun:yes">&nbsp; </span>L +<span style="mso-spacerun:yes">&nbsp;
+</span>X + V + I + I = CCLXVII</span></p>
+
+<p><span>100 + 100 + 50 + 10 + 5 + 1 + 1 = 267</span></p>
+
+<p></p>
+
+<p></p>
+
+<table border="1" cellspacing="0" cellpadding="2">
+ <tr>
+  <td>
+  <p><span>Convert</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>roman</span></span></p>
+  </td>
+  <td>
+  <p><span>decimal</span></span><span>?</span></p>
+  </td>
+  <td>
+  <p><span>comment</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>CCLXVII</span></p>
+  </td>
+  <td>
+  <p><span>267</span></p>
+  </td>
+  <td>
+  <p><span>CCLXVII
+  = C + C + L + X + V + I + I = 100 + 100 + 50 + 10 + 5 + 1 + 1 = 267</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>mdclxvi</span></span></p>
+  </td>
+  <td>
+  <p><span>1666</span></p>
+  </td>
+  <td>
+  <p><span>mdclxvi</span></span><span> = m + d + c + l + x + v + <span>i</span> = 1000 + 500 + 100 + 50 + 10 + 5 + 1 = 1666</span></p>
+  </td>
+ </tr>
+</table>
+
+<p></p>
+
+<p><b><span>Rule of Repetition</span></b></p>
+
+<p><span>Only
+powers of ten (I, X, C, M) can be repeated. What the heck! Do not repeat any of
+these letters more than three times in a row.</span></p>
+
+<p></p>
+
+<table border="1" cellspacing="0" cellpadding="2">
+ <tr>
+  <td>
+  <p><span>Convert</span></p>
+  </td>
+  <td>
+  <p><span>&nbsp;</span></p>
+  </td>
+  <td>
+  <p><span>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>roman</span></span></p>
+  </td>
+  <td>
+  <p><span>decimal</span></span><span>?</span></p>
+  </td>
+  <td>
+  <p><span>comment</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>C</span></p>
+  </td>
+  <td>
+  <p><span>100</span></p>
+  </td>
+  <td>
+  <p><span>is</span></span><span> valid</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>CC</span></p>
+  </td>
+  <td>
+  <p><span>200</span></p>
+  </td>
+  <td>
+  <p><span>is</span></span><span> valid</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>VV</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>V
+  is not a power of ten. Only powers of ten (I, X, C, M) can be repeated.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>LL</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>L
+  is not a power of ten. Only powers of ten (I, X, C, M) can be repeated.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>DD</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>D
+  is not a power of ten. Only powers of ten can be repeated.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>CCC</span></p>
+  </td>
+  <td>
+  <p><span>300</span></p>
+  </td>
+  <td>
+  <p><span>is</span></span><span> valid</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>XXX</span></p>
+  </td>
+  <td>
+  <p><span>30</span></p>
+  </td>
+  <td>
+  <p><span>is</span></span><span> valid</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>XXXXXXXXXX</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>Any
+  numeral cannot repeat more than 3 times</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>IIII</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>Any
+  numeral cannot repeat more than 3 times</span></p>
+  </td>
+ </tr>
+</table>
+
+<p></p>
+
+<p><b><span>Rule of Sorting</span></b></p>
+
+<p></p>
+
+<p><span>The
+rule of addition is complemented by the rule of sorting: The letters within a
+Roman numeral have to be sorted from left to right in descending order: Letters
+with the highest values are on the left; to the right the values decrease more
+and more. Thus, the Roman numeral CCLXVII cannot alternatively be written as,
+for instance, IIVXLCC.</span></p>
+
+<p></p>
+
+<table border="1" cellspacing="0" cellpadding="2">
+ <tr>
+  <td>
+  <p><span>Convert</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>roman</span></span></p>
+  </td>
+  <td>
+  <p><span>decimal</span></span><span>?</span></p>
+  </td>
+  <td>
+  <p><span>comment</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>CCLXVII</span></p>
+  </td>
+  <td>
+  <p><span>267</span></p>
+  </td>
+  <td>
+  <p><span>all</span></span><span> the letters are sorted from left to right in
+  descending order</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>IIVXLCC</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>I
+  <span>is</span> smaller than V which is smaller than X and so
+  forth. They have to be in descending order</span></p>
+  </td>
+ </tr>
+</table>
+
+<p></p>
+
+<p></p>
+
+<p><b><span>Rule of Subtraction</span></b></p>
+
+<p></p>
+
+<p><span>If
+a Roman letter with a smaller value stands on the left of a letter with a
+higher value, then the smaller value is not added, but has to be subtracted
+from the larger. The result is then added to the rest of the letters. The rule
+of sorting makes it possible to write some numbers in a shorter notation<a href="http://localhost:8085/FrontPage.UserStory.AcceptanceCriteriaSubtractionRule.ShortNotation?edit"><span>?</span></a>. For example, according to the rule of
+addition the value 44 is written as:</span></p>
+
+<p><span>10 + 10 + 10 + 10 + 1 + 1 + 1 + 1 = 44</span></p>
+
+<p><span><span style="mso-spacerun:yes">&nbsp;</span>X<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span><span>X</span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span><span>X</span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span><span>X</span><span style="mso-spacerun:yes">&nbsp;&nbsp; </span>I<span style="mso-spacerun:yes">&nbsp;&nbsp; </span><span>I</span><span style="mso-spacerun:yes">&nbsp;&nbsp; </span><span>I</span><span style="mso-spacerun:yes">&nbsp;&nbsp; </span><span>I</span> =
+XXXXIIII</span></p>
+
+<p></p>
+
+<p></p>
+
+<p><span>The
+rule of subtraction makes it possible to write:</span></p>
+
+<p><span>(-10) + 50 + (-1) + 5 = 44</span></p>
+
+<p><span><span style="mso-spacerun:yes">&nbsp;&nbsp;
+</span>X<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>L<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>I<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>V = XLIV</span></p>
+
+<p></p>
+
+<p></p>
+
+<table border="1" cellspacing="0" cellpadding="2">
+ <tr>
+  <td>
+  <p><span>Convert</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>roman</span></span></p>
+  </td>
+  <td>
+  <p><span>decimal</span></span><span>?</span></p>
+  </td>
+  <td>
+  <p><span>comment</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>XCIX</span></p>
+  </td>
+  <td>
+  <p><span>99</span></p>
+  </td>
+  <td>
+  <p><span>XCIX
+  = (-<span>)X</span> + C + (-)I + X = (-10) + 100 + (-1) + 10 = 99</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>CCXLIII</span></p>
+  </td>
+  <td>
+  <p><span>243</span></p>
+  </td>
+  <td>
+  <p><span>CCXLIII
+  = C + C + (-<span>)X</span> + L + I + I +I = 100 + 100 + (50 -
+  10) + 1 + 1 + 1 = 243</span></p>
+  </td>
+ </tr>
+</table>
+
+<p></p>
+
+<p><span>Unfortunately,
+the rule of subtraction is not always interpreted in the same way. Hence there
+are more rules around subtraction.</span></p>
+
+<p></p>
+
+<p> * <b><span>Only one letter can be subtracted
+from another letter, not two or more</span></b></p>
+
+<p></p>
+
+<table border="1" cellspacing="0" cellpadding="2">
+ <tr>
+  <td>
+  <p><span>Convert</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>roman</span></span></p>
+  </td>
+  <td>
+  <p><span>decimal</span></span><span>?</span></p>
+  </td>
+  <td>
+  <p><span>comment</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>CCM</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>CCM
+  isn't 800 because you can only subtract one letter from another, not two.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>XXL</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>XXL
+  isn't 30 because you can only subtract one letter from another, not two.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p></p>
+
+<p> * <b><span>Only powers of ten (I, X, C, M) can
+be subtracted.</span></b></p>
+
+<p></p>
+
+<table border="1" cellspacing="0" cellpadding="2">
+ <tr>
+  <td>
+  <p><span>Convert</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>roman</span></span></p>
+  </td>
+  <td>
+  <p><span>decimal</span></span><span>?</span></p>
+  </td>
+  <td>
+  <p><span>comment</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>IV</span></p>
+  </td>
+  <td>
+  <p><span>4</span></p>
+  </td>
+  <td>
+  <p><span>Only
+  powers of ten (I, X, C, M) can be subtracted</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>IX</span></p>
+  </td>
+  <td>
+  <p><span>9</span></p>
+  </td>
+  <td>
+  <p><span>Only
+  powers of ten (I, X, C, M) can be subtracted</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>XL</span></p>
+  </td>
+  <td>
+  <p><span>40</span></p>
+  </td>
+  <td>
+  <p><span>Only
+  powers of ten (I, X, C, M) can be subtracted</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>XC</span></p>
+  </td>
+  <td>
+  <p><span>90</span></p>
+  </td>
+  <td>
+  <p><span>Only
+  powers of ten (I, X, C, M) can be subtracted</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>CD</span></p>
+  </td>
+  <td>
+  <p><span>400</span></p>
+  </td>
+  <td>
+  <p><span>Only
+  powers of ten (I, X, C, M) can be subtracted</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>CM</span></p>
+  </td>
+  <td>
+  <p><span>900</span></p>
+  </td>
+  <td>
+  <p><span>Only
+  powers of ten (I, X, C, M) can be subtracted</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>VL</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>VL
+  isn't 45 because V (5) isn't a power of ten.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>XLV</span></p>
+  </td>
+  <td>
+  <p><span>45</span></p>
+  </td>
+  <td>
+  <p><span>Correct
+  45</span></p>
+  </td>
+ </tr>
+</table>
+
+<p></p>
+
+<p> * <b><span>The smaller letter must be 1/5th
+(one-fifth) or 1/10th (one-tenth) the larger one.</span></b><span></span></p>
+
+<p></p>
+
+<table border="1" cellspacing="0" cellpadding="2">
+ <tr>
+  <td>
+  <p><span>Convert</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>roman</span></span></p>
+  </td>
+  <td>
+  <p><span>decimal</span></span><span>?</span></p>
+  </td>
+  <td>
+  <p><span>comment</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>IC</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>IC
+  isn't 99 because I (1) <span>is</span> 1/100th of C (100), not
+  1/10th.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>XCIX</span></p>
+  </td>
+  <td>
+  <p><span>99</span></p>
+  </td>
+  <td>
+  <p><span>Correct
+  99</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>IL</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>IL
+  isn't 49 because I (1) <span>is</span> 1/50th of L (50), not
+  1/5th.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p></p>
+
+<p> * <b><span>The smaller letter must be either the
+first numeral or <span>preceded</span> by a letter at least ten
+times greater than it.</span></b></p>
+
+<p></p>
+
+<p></p>
+
+<table border="1" cellspacing="0" cellpadding="2">
+ <tr>
+  <td>
+  <p><span>Convert</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>roman</span></span></p>
+  </td>
+  <td>
+  <p><span>decimal</span></span><span>?</span></p>
+  </td>
+  <td>
+  <p><span>comment</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>DCM</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>DCM
+  isn't 1400 because D (500) is less than 1000 (10 * 100 (C)).</span></p>
+  </td>
+ </tr>
+</table>
+
+<p></p>
+
+<p> * <b><span>If another letter follows the larger
+one, it must be smaller than the number preceding the larger one.</span></b><span></span></p>
+
+<p></p>
+
+<table border="1" cellspacing="0" cellpadding="2">
+ <tr>
+  <td>
+  <p><span>Convert</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>roman</span></span></p>
+  </td>
+  <td>
+  <p><span>decimal</span></span><span>?</span></p>
+  </td>
+  <td>
+  <p><span>comment</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>XCL</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>XCL
+  isn't 140 because L (50) isn't smaller than X (10).</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><span>XCX</span></p>
+  </td>
+  <td>
+  <p><span>error</span></span></p>
+  </td>
+  <td>
+  <p><span>XCX
+  isn't 100 because X (10) isn't smaller than itself.</span></p>
+  </td>
+ </tr>
+</table>
+</body>
+</html>
