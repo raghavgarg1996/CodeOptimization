@@ -30,7 +30,7 @@ public class RomanNumeralParser {
     }
 
     private String removeAllWhiteSpaces(String romanDigits) {
-        return romanDigits.replaceAll("\\s+","");
+        return romanDigits.trim().replaceAll("\\s+","");
     }
 
     private void validateInput(String romanDigits) {

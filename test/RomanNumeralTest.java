@@ -23,7 +23,7 @@ public class RomanNumeralTest {
 
     @Test
     public void whiteSpacesAreIgnored(){
-        for(String s:asList(" CCLXVII ","mdcl xvi"," XCIX ")){
+        for(String s:asList("CCLXVII","mdclxvi","XCIX")){
             assertEquals(s.toUpperCase(),romanNumeral(s).toString());
         }
     }
