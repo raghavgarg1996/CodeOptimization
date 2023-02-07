@@ -101,4 +101,9 @@ public class RomanDigit {
     private boolean equals(final RomanDigit other){
         return symbol.equals(other.symbol)&& decimalValue==other.decimalValue;
     }
+
+    private int recursivelyDividedBy10(final int value) {
+        if (value <= 1) return value;
+        return recursivelyDividedBy10(value / 10);
+    }
 }

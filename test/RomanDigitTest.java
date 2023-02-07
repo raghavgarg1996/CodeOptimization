@@ -1,4 +1,5 @@
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 
 
 import java.util.HashMap;
@@ -9,6 +10,7 @@ import static junit.framework.TestCase.assertTrue;
 import static junit.framework.TestCase.fail;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 
@@ -108,5 +110,14 @@ public class RomanDigitTest {
 
     private void assertValueBasedOnNextDigit(final int expected,final char digit,final char next) {
         assertEquals(expected,romanDigit(digit).dependingOnNextDigitAppendValueTo(1,romanDigit(next)));
+    }
+
+    private void assertDigitIsInvalid(final char testDigitValue) {
+        try {
+            romanDigit(testDigitValue);
+            Assertions.fail("Should have thrown an exception");
+        } catch (NumberFormatException e) {
+            assertEquals(testDigitValue + " is not a valid Roman Numeral Digit", e.getMessage());
+        }
     }
 }
